@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+:root {
+    --normal: #808080;
+    --fire: #f78c44;
+    --grass: #38c25b;
+    --electric: #e9e515;
+    --water: #2956eb;
+    --rock: #885c38;
+    --ground: #cc864c;
+    --steel: #4c6277;
+    --ice: #8ed0f7;
+    --psychic: #cc20e2;
+    --bug: #93e412;
+    --dragon: #41a9e6;
+    --fairy: #f77676;
+    --ghost: #3e154b;
+    --poison: #8400ac;
+    --fighting: #e41212;
+    --flying: #b1ddf7;
+    --dark: #202224;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #366db6;
+}
+#header{
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #bd4545;
+    z-index: 10;
+}
+.title{
+    color: #366db6;
+    text-shadow:
+        -1.5px -1.5px 1.5px #eef116,
+        1.5px 1.5px 1.5px #eef116,
+        -1.5px 1.5px 1.5px #eef116,
+        1.5px -1.5px 1.5px #eef116;
+}
+#header .selectbox{
+    border: none;
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    outline: none;
+    border-radius: 0.4rem;
+}
+#container {
+    min-height: 100vh;
+    margin: 10rem auto 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.card {
+    width: 22.75rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: 0.15rem solid #b4b4b4;
+    transition: 0.1s linear;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 0.7rem;
+    position: relative;
+    height: 7.25rem;
+    margin-bottom: 6rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    text-shadow:
+        -1.5px -1.5px 1.5px #000,
+        1.5px 1.5px 1.5px #000,
+        -1.5px 1.5px 1.5px #000,
+        1.5px -1.5px 1.5px #000;
+    color: #fff;
+    transform: translateZ(20px)
+}
+.header-img {
+    position: absolute;
+    top: 30%;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #fff;
+}
+.img {
+    width: 7rem;
+    height: 7rem;
+}
+.card-info {
+    padding: 1rem;
+    border: 0.1rem solid #b4b4b4;
+    border-radius: 0.3rem;
+    transform: translateZ(20px)
+}
+.info-types {
+    display: flex;
+    gap: 1.35rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.info-stats {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 0.85rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.type {
+    padding: 0.3rem 0.65rem;
+    border: 0.4rem dashed;
+    border-width: 0.15rem;
+    font-weight: bold;
+}
+.type-normal{color: var(--normal);border-color: var(--normal);}
+.type-fire{color: var(--fire);border-color: var(--fire);}
+.type-grass{color: var(--grass);border-color: var(--grass);}
+.type-electric{color: var(--electric);border-color: var(--electric);}
+.type-water{color: var(--water);border-color: var(--water);}
+.type-rock{color: var(--rock);border-color: var(--rock);}
+.type-ground{color: var(--ground);border-color: var(--ground);}
+.type-steel{color: var(--steel);border-color: var(--steel);}
+.type-ice{color: var(--ice);border-color: var(--ice);}
+.type-psychic{color: var(--psychic);border-color: var(--psychic);}
+.type-bug{color: var(--bug);border-color: var(--bug);}
+.type-dragon{color: var(--dragon);border-color: var(--dragon);}
+.type-fairy{color: var(--fairy);border-color: var(--fairy);}
+.type-ghost{color: var(--ghost);border-color: var(--ghost);}
+.type-poison{color: var(--poison);border-color: var(--poison);}
+.type-fighting{color: var(--fighting);border-color: var(--fighting);}
+.type-flying{color: var(--flying);border-color: var(--flying);}
+.type-dark{color: var(--dark);border-color: var(--dark);}
+#footer{
+    padding: 2.5rem;
+    text-align: center;
+    background-color:#bd4545;
+    border-top-style: solid;
+    border-color: #eef116;
+}
+.btn{
+    padding: 0.75rem 2rem;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+    background-color: #366db6;
+    color: #eef116;
+}
+.btn:hover{
+    background-color: #eef116;
+    color: #366db6;
+}
